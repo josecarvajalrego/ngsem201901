@@ -1,17 +1,14 @@
 <app-header></app-header>
-<div>
-    Nro 1: <input type="number" [(ngModel)]="nro1"> <br />
-    Nro 2: <input type="number" [(ngModel)]="nro2"> <br />
-    Operacion: <input type="text" [(ngModel)]="operacion"> <br />
-    Resultado: <input type="number" [(ngModel)]="result"> <br />
-    <input type="button" value="Resolver operación" (click)="resolverOperacion()" />
 
-    <div *ngIf="operacion == '1'">
-        <img src="/assets/images/logo.png" alt="">
-    </div>
-    <div *ngFor="let opcion of opcionesOperacion">
-        <span>{{opcion.label}}</span>
-    </div>
-    <div>{{nro1}}</div>
-</div>
+<table>
+    <tr>
+        <td>
+            <app-post-add></app-post-add>
+        </td>
+        <td>
+            <app-post-list></app-post-list>
+        </td>
+    </tr>
+</table>
+
 <app-footer></app-footer>

@@ -1,0 +1,6 @@
+<div *ngIf="postsList.length == 0">
+  No hay posts registrados
+</div>
+<ol>
+  <li *ngFor="let post of postsList">{{post.nombre}} : {{post.descripcion}}</li>
+</ol>

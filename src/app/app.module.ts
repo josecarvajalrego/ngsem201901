@@ -6,16 +6,20 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { PostModule } from './post/post.module';
+import { CalculadoraComponent } from './calculadora/calculadora.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalculadoraComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    PostModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

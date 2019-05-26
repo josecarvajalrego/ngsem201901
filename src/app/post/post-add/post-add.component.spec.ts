@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FootergitComponent } from './footergit.component';
+import { PostAddComponent } from './post-add.component';
 
-describe('FootergitComponent', () => {
-  let component: FootergitComponent;
-  let fixture: ComponentFixture<FootergitComponent>;
+describe('PostAddComponent', () => {
+  let component: PostAddComponent;
+  let fixture: ComponentFixture<PostAddComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FootergitComponent ]
+      declarations: [ PostAddComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FootergitComponent);
+    fixture = TestBed.createComponent(PostAddComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
