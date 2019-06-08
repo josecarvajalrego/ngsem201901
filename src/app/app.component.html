@@ -1,14 +1,32 @@
-<app-header></app-header>
+<div class="container" fxLayout="row">
+    <div class="menu" fxFlex="25" fxLayout="column">
+        <div class="menu-header header-label" fxFlex="8">
+            Row #1, column #1
+        </div>
+        <div fxFlex="92" class="menu-content">
+        </div>
+    </div>
 
-<table>
-    <tr>
-        <td>
-            <app-post-add></app-post-add>
-        </td>
-        <td>
-            <app-post-list></app-post-list>
-        </td>
-    </tr>
-</table>
+    <div class="content" fxFlex="65" fxLayout="column">
+        <div fxFlex="50" class="content-1" fxLayout="column">
+            <div class="content-1-header header-label" fxFlex="16">
+                Row #1, column 2
+            </div>
+            <div class="content-1-content" fxFlex="84">
 
-<app-footer></app-footer>
+            </div>
+        </div>
+        <div fxFlex="50" class="content-2" fxLayout="column">
+            <div class="content-2-header header-label" fxFlex="16">
+                Row #2, column 2
+            </div>
+            <div class="content-2-content" fxFlex="84">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="right-banner" fxFlex="10">
+        right banner
+    </div>
+</div>

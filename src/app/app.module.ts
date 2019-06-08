@@ -9,6 +9,8 @@ import { SharedModule } from './shared/shared.module';
 import { PostModule } from './post/post.module';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 
+import { FlexLayoutModule } from '@angular/flex-layout'; 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,10 +18,11 @@ import { CalculadoraComponent } from './calculadora/calculadora.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule,        
     FormsModule,
+    FlexLayoutModule,
     SharedModule,
-    PostModule    
+    PostModule
   ],
   providers: [],
   bootstrap: [AppComponent]

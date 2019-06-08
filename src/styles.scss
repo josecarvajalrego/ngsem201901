@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+}
+
+.container {
+
+  .header-label{
+    color:yellow;
+  }
+
+  border: 1px solid grey;
+  min-height: 99vh;
+
+  .menu {    
+    .menu-header{    
+        background-color: #0a2985;        
+    }
+    .menu-content{
+        background-color: #002db3;
+    }
+  }
+
+  .content{
+      background-color: white;
+      .content-1 {        
+        .content-1-header{
+            background-color: #0a7e57;
+        }
+        .content-1-content{
+            background-color: #00b377;
+        }
+      }
+      .content-2 {        
+        .content-2-header{
+            background-color: #043d92;
+        }
+        .content-2-content{
+            background-color: #095edd;
+        }
+      }
+  }
+
+  .right-banner{
+    background-color: black;
+  }
+}
