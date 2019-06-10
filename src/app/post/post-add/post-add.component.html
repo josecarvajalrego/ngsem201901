@@ -1,9 +1,11 @@
-<div>
-  Nombre: <br/>
-  <input type="text" [(ngModel)]="post.nombre"> <br/>
-  Descripción: <br/> 
-  <textarea cols="30" rows="10" [(ngModel)]="post.descripcion"></textarea> <br/>
-  <input type="button" value="Agregar" (click)="agregarPost()">
+<mat-form-field>
+  <input matInput placeholder="Input" [(ngModel)]="post.nombre">
+</mat-form-field>
+<br/>
+<mat-form-field>
+  <textarea matInput placeholder="Textarea" [(ngModel)]="post.descripcion"></textarea>
+</mat-form-field>
+
+<div>  
+  <button mat-raised-button color="accent" (click)="agregarPost()">Crear</button>
 </div>
-<app-tag-add></app-tag-add>
-<app-tag-list></app-tag-list>

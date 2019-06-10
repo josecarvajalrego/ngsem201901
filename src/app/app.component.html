@@ -1,32 +1,31 @@
-<div class="container" fxLayout="row">
-    <div class="menu" fxFlex="25" fxLayout="column">
+<div class="container" fxFlexFill  fxLayout="row" fxLayout.xs="column">
+    <div class="menu" fxFlex="20" fxFlex.xs="30" fxLayout="column">
         <div class="menu-header header-label" fxFlex="8">
-            Row #1, column #1
+            <app-header></app-header>
         </div>
         <div fxFlex="92" class="menu-content">
         </div>
     </div>
 
-    <div class="content" fxFlex="65" fxLayout="column">
+    <div class="content" fxFlex="70" fxFlex.xs="50" fxLayout="column">
         <div fxFlex="50" class="content-1" fxLayout="column">
-            <div class="content-1-header header-label" fxFlex="16">
-                Row #1, column 2
+            <div class="content-1-header header-label" fxFlex="16" fxHide.xs>
+                Opción seleccionada
             </div>
             <div class="content-1-content" fxFlex="84">
-
+                <router-outlet></router-outlet>
             </div>
         </div>
-        <div fxFlex="50" class="content-2" fxLayout="column">
-            <div class="content-2-header header-label" fxFlex="16">
+        <div fxFlex="50" class="content-2" fxLayout="column" fxHide.xs>
+            <div class="content-2-header header-label" fxFlex="16" fxHide.xs>
                 Row #2, column 2
             </div>
             <div class="content-2-content" fxFlex="84">
-
             </div>
         </div>
     </div>
 
-    <div class="right-banner" fxFlex="10">
+    <div class="right-banner" fxFlex="10" fxFlex.xs="20">
         right banner
     </div>
 </div>

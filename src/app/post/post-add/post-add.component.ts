@@ -19,7 +19,14 @@ export class PostAddComponent implements OnInit {
   }
 
   agregarPost(){
-    this.postService.addPost(this.post);
-    this.post = new Post();
+    this.postService.addPost(this.post).subscribe(
+      (post:Post) => { //Todo salió bien
+        alert('El post se creado con exitosamente');
+        this.post = new Post();
+      },
+      () => { //Hubo algún error
+        alert('Hubo un error al crear el post');
+      },
+    );
   }
 }

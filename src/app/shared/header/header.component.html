@@ -1,6 +1,5 @@
-<div class="header">
-  bienvenido a mi tienda virtual
-  <a routerLink="posts/add">Crear</a> | 
-  <a routerLink="posts/list">listar</a>
-</div>
-<br/>
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button routerLink="posts/add" mat-menu-item>Crear Post</button>
+  <button routerLink="posts/list" mat-menu-item>Listar Posts</button>
+</mat-menu>

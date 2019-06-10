@@ -5,13 +5,15 @@ import { TagModule } from '../tag/tag.module';
 
 import { FormsModule } from '@angular/forms';
 import { PostListComponent } from './post-list/post-list.component';
+import { MaterialModule } from '../material/material.module';
 
 @NgModule({
   declarations: [PostAddComponent, PostListComponent],
   imports: [
     CommonModule,
     TagModule,
-    FormsModule
+    FormsModule,
+    MaterialModule
   ],
   exports: [
     PostAddComponent,

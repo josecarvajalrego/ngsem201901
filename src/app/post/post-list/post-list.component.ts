@@ -14,7 +14,14 @@ export class PostListComponent implements OnInit {
   constructor(private postService:PostService) { }
 
   ngOnInit() {
-    this.postsList = this.postService.getAllPosts();
+    this.postService.getAllPosts().subscribe(
+      (postsList: Post[]) => {
+        this.postsList = postsList;
+      },
+      () => {
+        alert('Hubo un error al recuperar los posts');
+      }
+    );
   }
 
 
