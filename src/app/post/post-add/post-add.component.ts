@@ -21,7 +21,7 @@ export class PostAddComponent implements OnInit {
   agregarPost(){
     this.postService.addPost(this.post).subscribe(
       (post:Post) => { //Todo salió bien
-        alert('El post se creado con exitosamente');
+        alert('El post se creado exitosamente');
         this.post = new Post();
       },
       () => { //Hubo algún error
